@@ -25,8 +25,11 @@ public class MobileserviceApplication  implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		
-	/*	
-		Mobile m=new Mobile(4,"Nokia",1,2,3);
+	
+	/*
+	 
+       //Add Mobile data	 	
+	 	Mobile m=new Mobile(3,"JIO",1331,322,333);
 		
 		MobileStatus x=mobileService.addMobile(m);
 		
@@ -36,17 +39,48 @@ public class MobileserviceApplication  implements CommandLineRunner{
 		
 		else
 			System.out.println("Could not add");
-	}
-	*/
+	}*/
+	
 		
 	
-		List<Mobile> mobiles= mobileService.getAllMobile();
+	
 		
-		if(mobiles.size()==0)
-			System.out.println("no mobile found");
+	/*
+	 
+	 //Show All Mobiles 
+	 * List<Mobile> mobiles= mobileService.getAllMobile();
+	 * 
+	 * if(mobiles.size()==0) System.out.println("no mobile found"); else
+	 * System.out.println(mobiles+"           ");
+	 */
+	
+	
+	/*
+	 
+	 //Update Mobile data
+	 * Mobile m=new Mobile(1,"JIOOOO",1331,322,333); MobileStatus
+	 * x=mobileService.updateMobile(m);
+	 * 
+	 * if(x.getStatuCode()==1) { System.out.println(" Updated Mobile details"); }
+	 * 
+	 * else System.out.println("Could not Update");
+	 */
+	
+	
+	//Delete Mobile
+		
+		int imeinumber=4;
+		
+        MobileStatus x=mobileService.removeMobile(imeinumber);
+		
+		if(x.getStatuCode()==1) {
+			System.out.println("removed mobile details");
+		}
+		
 		else
-			System.out.println(mobiles+"           ");
-	
+			System.out.println("Could not remove details");
 		
 	}
-}
+	
+	}
+

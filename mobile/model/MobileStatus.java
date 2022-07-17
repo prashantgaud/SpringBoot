@@ -2,16 +2,16 @@ package mobile.model;
 
 public class MobileStatus {
 
-	private int statuCode;
+	private int statusCode;
 	private String message;
 	private Mobile mobile;
 	
 	
 	public int getStatuCode() {
-		return statuCode;
+		return statusCode;
 	}
 	public void setStatuCode(int statuCode) {
-		this.statuCode = statuCode;
+		this.statusCode = statuCode;
 	}
 	public String getMessage() {
 		return message;
@@ -27,7 +27,7 @@ public class MobileStatus {
 	}
 	public MobileStatus(int statuCode, String message, Mobile mobile) {
 		super();
-		this.statuCode = statuCode;
+		this.statusCode = statuCode;
 		this.message = message;
 		this.mobile = mobile;
 	}

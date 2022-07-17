@@ -1,7 +1,14 @@
 package mobile.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+//@Table(name="MobileTable")
+@Entity
 public class Mobile {
 	
+	@Id
 	private int imeiNumber;
 	private String make;
 	private int ramsize;
